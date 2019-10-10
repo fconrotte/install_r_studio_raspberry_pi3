@@ -6,7 +6,7 @@ dpkg-reconfigure dash
 
 apt-get update
 apt-get upgrade -y
-apt-get install -y git r-recommended python-dev
+apt-get install -y git r-recommended python-dev cmake
 cd /home/pi/Downloads/
 git clone https://github.com/rstudio/rstudio.git
 cd /home/pi/Downloads/rstudio/dependencies/common/
@@ -14,8 +14,8 @@ cd /home/pi/Downloads/rstudio/dependencies/common/
 cd /home/pi/Downloads/rstudio/dependencies/linux/
 ./install-dependencies-debian
 
-#saw java 6 was not installed. installed v7
-apt-get install -y openjdk-7-jdk
+#saw java 6 was not installed. installed v8
+apt-get install -y openjdk-8-jdk
 
 #tried to make install, got an error about dictionaries not installed and rerun install-dependencies
 cd /home/pi/Downloads/rstudio/dependencies/common/
